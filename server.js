@@ -1,8 +1,11 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
-import connectDB from './config/db.js'; // Adjust the path as needed
-import authRoutes from './routes/authRoutes.js'; // Adjust the path as needed
+import connectDB from './config/db.js';
+import authRoutes from './routes/authRoutes.js';
+import dotenv from 'dotenv';
+
+dotenv.config(); // Load environment variables from .env file
 
 const app = express();
 
