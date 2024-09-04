@@ -1,8 +1,8 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
-import connectDB from './config/db.js';
-import authRoutes from './routes/authRoutes.js';
+import connectDB from './config/db.js'; // Adjust the path as needed
+import authRoutes from './routes/authRoutes.js'; // Adjust the path as needed
 
 const app = express();
 
